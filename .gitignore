@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-ssr
+*.local
+*.tsbuildinfo
+.DS_Store
+.vercel
+.agents
+.agent
+.claude
+.gemini
+AGENTS.md
+GEMINI.md
+CLAUDE.md

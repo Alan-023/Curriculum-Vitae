@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <!-- Deep Obsidian-Sapphire Core -->
+    <radialGradient id="bubbleCore" cx="36%" cy="28%" r="72%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.95" />
+      <stop offset="52%" stop-color="#070b16" stop-opacity="0.98" />
+      <stop offset="86%" stop-color="#0a192f" stop-opacity="1" />
+      <stop offset="100%" stop-color="#162447" stop-opacity="1" />
+    </radialGradient>
+
+    <!-- Iridescent Liquid Glass Caustic Glow -->
+    <radialGradient id="causticBottom" cx="68%" cy="78%" r="54%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.55" />
+      <stop offset="45%" stop-color="#a855f7" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Prismatic Rainbow Dispersion Rim -->
+    <linearGradient id="prismRim" x1="6" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="24%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="76%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#fde68a" />
+    </linearGradient>
+
+    <!-- Top Specular Meniscus -->
+    <linearGradient id="topGloss" x1="20" y1="7" x2="32" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.72" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Prismatic Letter Fill -->
+    <linearGradient id="letterGrad" x1="20" y1="16" x2="46" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#f5d0fe" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Sphere Base -->
+  <circle cx="32" cy="32" r="29" fill="url(#bubbleCore)" />
+  <circle cx="32" cy="32" r="29" fill="url(#causticBottom)" />
+
+  <!-- Prismatic Liquid Glass Border -->
+  <circle cx="32" cy="32" r="28.2" stroke="url(#prismRim)" stroke-width="2.4" />
+  <circle cx="32" cy="32" r="25.8" stroke="#ffffff" stroke-opacity="0.14" stroke-width="0.8" />
+
+  <!-- Curved Bubble Specular Reflection Arc -->
+  <ellipse
+    cx="25"
+    cy="16.5"
+    rx="13.5"
+    ry="6.2"
+    transform="rotate(-18 25 16.5)"
+    fill="url(#topGloss)"
+  />
+  <circle cx="15.5" cy="23.5" r="1.8" fill="#ffffff" fill-opacity="0.65" />
+
+  <!-- Sculptural Bold Single 'A' -->
+  <path
+    d="M32 16.5L45.2 46.5H38.6L36.1 40.3H27.9L25.4 46.5H18.8L32 16.5ZM34.1 35.1L32 29.5L29.9 35.1H34.1Z"
+    fill="url(#letterGrad)"
+  />
+</svg>
